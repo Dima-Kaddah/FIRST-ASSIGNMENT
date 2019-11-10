@@ -1,0 +1,393 @@
+/* Date:sep 2019;
+   Discriptiion: Saturnus band web;
+   note:all image uploaded in postimage.org*/
+
+/*--------------------Start Navigation Bar--------------------*/
+/*for all html*/
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Almendra SC;
+}
+
+/*background image body:id*/
+#content {
+  background-image: url('./imges/backgroundall.jpg');
+}
+
+/*div id for navbar design*/
+#navBar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: black;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  z-index: 10;
+  padding-bottom: 5px;
+}
+#navBar,
+nav {
+  float: right;
+  display: block;
+}
+
+/*call li from ul id*/
+.navul li {
+  list-style: none;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin: 0 70px;
+}
+
+/*logo in the left of the page inside menu bar*/
+#logo {
+  float: left;
+  width: 180px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+/*logo image hover*/
+#logo:hover {
+  opacity: 0.6;
+}
+
+/*get the a tag by ul id*/
+.navul a {
+  text-decoration: none;
+  color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 25px;
+  display: block;
+}
+
+.navul a:hover,
+a:active {
+  background-color: grey;
+  color: rgb(89, 0, 0);
+}
+
+/*------------- End Navigation Bar--------------*/
+
+/*all the 3 h1*/
+/* .clr{clear:both;} */
+h1 {
+  display: block;
+  clear: both;
+  font-size: 12vw;
+  color: rgb(89, 0, 0);
+  text-align: center;
+  margin-top: 40px;
+}
+
+/*------------Start Band sasction-------------*/
+
+/*band img id*/
+#bandImg {
+  border-radius: 500px;
+  width: 98%;
+  display: block;
+  box-shadow: 0px 0px 6px 3px black;
+}
+
+/*table header table h3*/
+h3 {
+  margin: 20px;
+  text-align: center;
+  font-size: 35px;
+  display: block;
+}
+
+/*Table design/table&td*/
+.namesTab,
+td {
+  min-width: 49%;
+  text-align: left;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  opacity: 0.8;
+  color: black;
+}
+
+/*get td from table class*/
+.namesTab td {
+  padding-left: 20px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+/*------------End Band sasction-------------*/
+
+/*-------------Start Discography Saction-------------*/
+
+/*albums ul class */
+#albumsContent {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*albums li class*/
+.AlbumDes {
+  width: 150px;
+  margin: 20px;
+  padding: 15px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 2px #000;
+}
+
+/* images class*/
+.imgAlbum {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px 2px #0000;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.AlbumDes img:hover,
+.AlbumDes img:active {
+  border-radius: 30px;
+  opacity: 0.5;
+  box-shadow: 0px 0px 5px 2px #000;
+}
+
+/*-------------End Discography Saction-------------*/
+
+/*-------------start Slider-------------*/
+
+.slidSac {
+  max-width: 800px;
+  height: 500px;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*div class slider images*/
+.slider {
+  max-width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 5px 5px black;
+  background-image: url('./imges/angle.jpg');
+  border-radius: 20px;
+  animation: slider 13s infinite linear;
+}
+
+/*slider images*/
+@keyframes slider {
+  0% {
+    background-image: url('./imges/angle.jpg');
+  }
+  20% {
+    background-image: url('./imges/slider1.jpg');
+  }
+  40% {
+    background-image: url('./imges/slider2.jpg');
+  }
+  60% {
+    background-image: url('./imges/slider3.jpg');
+  }
+  80% {
+    background-image: url('./imges/v.jpg');
+  }
+  100% {
+    background-image: url('./imges/pbty.jpg');
+  }
+}
+
+/*-------------End Slider-------------*/
+
+/*-------------Start Tours table-------------*/
+
+/*Tour table parent*/
+.infoTour {
+  max-width: 800px;
+  opacity: 0.9;
+  position: relative;
+}
+
+/*design for table th td*/
+.tourTab,
+.tourTab th,
+.tourTab td {
+  font-size: 20px;
+  border-collapse: collapse;
+  border-radius: 4px;
+}
+
+/* Tour table */
+.tourTab {
+  padding: 30px;
+  display: block;
+  background-color: rgb(145, 145, 145);
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px black;
+}
+
+/*get th from table class*/
+.tourTab th {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 2px 2px black;
+}
+
+/*get td from table class*/
+.tourTab td {
+  padding-left: 10px;
+  padding-top: 10px;
+  box-shadow: 0px 0px 2px 2px black;
+}
+
+/*get a tag table class*/
+.tourTab a {
+  text-decoration: none;
+  color: black;
+}
+
+.tourTab a:hover {
+  opacity: 0.5;
+}
+
+#ciltic {
+  position: absolute;
+  width: 100px;
+  height: 385px;
+  z-index: 10;
+  right: 10px;
+  top: 5px;
+}
+
+/*get a tag fom class*/
+.but {
+  text-align: center;
+  background-color: rgb(64, 64, 64);
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px 2px black;
+}
+
+/*get ticket from a tag class*/
+.but:hover,
+.but:active,
+.but:focus {
+  background-color: rgb(190, 189, 189);
+  border-radius: 4px;
+  color: rgb(89, 0, 0);
+}
+
+/*-------------End Tour Saction-------------*/
+
+/*-------------Start Contact Saction--------------*/
+
+/*contact parent div id*/
+.contactFoot {
+  width: 50%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* get the images from class parent div*/
+.contactFoot img {
+  width: 30px;
+  border-radius: 15px;
+  display: block;
+  margin: 15px;
+}
+
+/*contact image hover*/
+.contactFoot img:hover {
+  background-color: rgb(190, 189, 189);
+  border-radius: 15px;
+  opacity: 0.5;
+  color: rgb(0, 0, 0, 0.1);
+}
+
+/*last div class name sign*/
+
+.foot a {
+  text-decoration: none;
+  color: black;
+}
+
+.foot a:hover {
+  opacity: 0.5;
+}
+
+/*-------------End Contact Saction--------------*/
+/*----------------End CSS file----------------*/
+@media (max-width: 800px) {
+  .contactFoot {
+    width: 90%;
+    height: 80px;
+  }
+
+  .contactFoot img {
+    width: 20px;
+  }
+
+  #logo {
+    float: none;
+  }
+
+  #navBar,
+  nav {
+    float: none;
+    display: block;
+  }
+
+  .navul li {
+    margin: 0 40px;
+  }
+  #ciltic {
+    width: 80px;
+  }
+  #ciltic {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navul li {
+    margin: 0 70px;
+  }
+
+  .tourTab,
+  .tourTab th,
+  .tourTab td {
+    font-size: 15px;
+  }
+  .namesTab,
+  td {
+    font-size: 20px;
+  }
+}
