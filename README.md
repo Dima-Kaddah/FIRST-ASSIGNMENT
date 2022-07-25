@@ -1,6 +1,7 @@
 # FIRST-ASSIGNMENT
 Saturnus DOOM METAL band
-
+- this project based on HTML and CSS.
+- 
 ### DEMO: [Saturnus](https://dima-kaddah.github.io/FIRST-ASSIGNMENT/)
 
 
